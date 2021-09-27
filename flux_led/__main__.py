@@ -25,10 +25,25 @@ in PyQt, Kivy, or some other framework.
 * Setting timers
 
 ##### Some missing pieces:
-* Initial administration to set up WiFi SSID and passphrase/key.
+* Initial administration to set up WiFi SSID and passphrase/key - this requires a UDP establishment on the device's AP that it creates, 
+followed by two more packets that set the Time, AP and password, then send a reboot
 * Remote access administration
 * Music-relating pulsing. This feature isn't so impressive on the Magic Home app,
-and looks like it might be a bit of work.
+and looks like it might be a bit of work. - This is simply done by setting colors from the microphone and isn't actually built into the app
+
+##### Adam is adding:
+* Smart Plug - Supports [Power restore state, Timer loops]
+* WS 2811 controller - Supports custom FX, timers, and 400 presets
+* RGB + CCT controller
+* CCT controller (if it exists)
+* RGB Controller
+* RGB + W Controller
+* Dimmable controller
+* Dimmable bulb
+* RGB + CCT Bulb
+* RGBW bulb
+* CCT Bulb
+* RGB bulb (if it exists)
 
 ##### Cool feature:
 * Specify colors with names or web hex values.  Requires that python "webcolors"
